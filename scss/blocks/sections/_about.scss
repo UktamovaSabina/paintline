@@ -1,0 +1,130 @@
+.about-section {
+
+    .container {
+        padding: 20px;
+
+        @media screen and (max-width: 900px) {
+            & {
+                padding: 15px 20px;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            & {
+                padding: 10px 20px;
+            }
+        }
+    }
+
+    .heading {
+        color: $navyBlue;
+        text-align: center;
+        font-weight: 700;
+        font-size: 35px;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 900px) {
+            & {
+                font-size: 30px;
+                margin-bottom: 7px;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            & {
+                font-size: 25px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .about-section__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .description-list {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: center;
+            gap: 20px;
+
+            li {
+                width: 100%;
+                color: rgb(41, 39, 39);
+                font-weight: 500;
+                font-size: 20px;
+
+                dl {
+                    margin-bottom: 10px;
+
+                    dt {
+                        text-align: center;
+                        font-weight: 600;
+                    }
+
+                    dd {
+                        color: rgb(37, 37, 37);
+                        font-size: 16px;
+                        margin-top: 10px;
+
+                        span {
+                            font-weight: 600;
+                            color: $darkYellow;
+                        }
+                    }
+                }
+
+                .white-logo {
+                    max-width: 150px;
+                    width: 100%;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+
+            @media screen and (max-width: 900px) {
+                & {
+                    gap: 10px;
+
+                    li {
+                        font-size: 14px;
+
+                        dl {
+                            margin-bottom: 0;
+
+                            dt {
+                                font-size: 15px;
+                            }
+
+                            dd {
+                                font-size: 13px;
+                                margin-top: 7px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .chemistry-img {
+            max-width: 500px;
+            width: 100%;
+            object-fit: cover;
+
+            @media screen and (max-width: 900px) {
+                & {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            & {
+                flex-direction: column;
+                gap: 0px;
+            }
+        }
+    }
+}

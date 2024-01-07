@@ -1,0 +1,90 @@
+header {
+    background-color: $navyBlue;
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+
+        .logo {
+            max-width: 180px;
+            width: 100%;
+            border-radius: 40px;
+
+            @media screen and (max-width: 700px) {
+                & {
+                    max-width: 120px;
+                }
+            }
+        }
+
+        .burger-icon {
+            display: none;
+            color: #FFF;
+
+            @media screen and (max-width: 700px) {
+                & {
+                    display: flex;
+                    align-items: center;
+                    font-size: 33px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .navbar-list {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 30px 20px;
+            gap: 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.799);
+
+            li {
+                a {
+                    display: inline-block;
+                    padding: 12px 22px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    color: #FFF;
+                    border-radius: 25px;
+
+                    @media screen and (max-width: 700px) {
+                        & {
+                            padding: 9px 19px;
+                            font-size: 16px;
+                        }
+                    }
+
+                    &:hover {
+                        box-shadow: rgba(205, 205, 205, 0.2) 0px 2px 8px 0px;
+                        color: $darkYellow;
+                    }
+
+                    &:active {
+                        color: #FFF;
+                    }
+                }
+            }
+
+            @media screen and (min-width: 701px) {
+                & {
+                    position: relative;
+                    display: flex;
+                    padding: 0;
+                    flex-direction: row;
+                    gap: 25px;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
