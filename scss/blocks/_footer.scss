@@ -1,0 +1,45 @@
+footer {
+    background-color: $navyBlue;
+
+    .container {
+
+        padding: 20px;
+
+        h3 {
+            color: #CCC;
+            text-align: center;
+            font-style: italic;
+            font-weight: 100;
+            font-size: 12px;
+        }
+    }
+
+}
+
+.desc__contact-section {
+    background-color: $navyBlue;
+    border-bottom: 1px solid #666;
+
+    .container {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .contacts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            li:hover .stroke {
+                stroke: red;
+            }
+
+            li:hover .fill {
+                fill: red;
+            }
+        }
+    }
+}

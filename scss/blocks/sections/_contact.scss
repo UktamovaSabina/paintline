@@ -1,0 +1,93 @@
+.contact-section {
+    color: aliceblue;
+    background-color: $navyBlue;
+    border-bottom: 1px solid #CCC;
+
+    .container {
+        padding: 20px;
+
+        @media screen and (max-width: 900px) {
+            & {
+                padding: 15px 20px;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            & {
+                padding: 10px 20px;
+            }
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 35px;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid aliceblue;
+
+            @media screen and (max-width: 900px) {
+                & {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            @media screen and (max-width: 700px) {
+                & {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .contacts-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            li {
+
+                a {
+                    width: 300px;
+                    display: block;
+                    padding: 10px;
+                    color: aliceblue;
+                    border: 1px solid aliceblue;
+                    border-radius: 8px;
+
+                    &:hover {
+                        box-shadow: #ff8e2b54 0px 7px 29px 0px;
+                    }
+
+                    &:active {
+                        opacity: 50%;
+                    }
+
+                    h4 {
+                        text-align: center;
+                        margin-bottom: 10px;
+                    }
+
+                    .contact {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 10px 15px;
+                        gap: 10px;
+                        background-color: $darkYellow;
+                        border-radius: 8px;
+
+                        img {
+                            width: 25px;
+                        }
+
+                        span {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -14,3 +14,50 @@ ul {
 a {
     text-decoration: none;
 }
+
+.up-button {
+    position: fixed;
+    display: inline-block;
+    right: 10px;
+    bottom: 5rem;
+
+    img {
+        width: 50px;
+        opacity: 50%;
+
+        &:hover {
+            opacity: 100%;
+        }
+
+        &:active {
+            opacity: 90%;
+        }
+    }
+}
+
+.home-button {
+    position: fixed;
+    display: inline-block;
+    right: 10px;
+    bottom: 9rem;
+
+    img {
+        width: 50px;
+        opacity: 50%;
+
+        &:hover {
+            opacity: 100%;
+        }
+
+        &:active {
+            opacity: 90%;
+        }
+    }
+}
+
+.sections-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
