@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const mediaQuery = window.matchMedia('(max-width: 700px)');
 
     burgerIcon.addEventListener('click', function () {
-        console.log('burger clicked');
         navbarList.style.display = 'flex'
     });
 

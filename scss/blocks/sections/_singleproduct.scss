@@ -50,17 +50,21 @@
                 }
             }
 
-            .product-description__paragraph {
-                color: #666;
-                margin-bottom: 10px;
-
-                strong {
+            .description__list {
+                h4 {
                     color: $navyBlue;
                     font-size: 20px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: #666;
+                    margin-bottom: 8px;
                 }
             }
 
-            .product-price {
+            .product-price,
+            .made-in {
                 font-size: 20px;
                 margin-bottom: 10px;
 
