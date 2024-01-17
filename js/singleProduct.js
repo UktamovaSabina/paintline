@@ -15,11 +15,15 @@ singleProductContainer.innerHTML = `
         <img src="./images/location.png" alt="location" width="30">
     </div>
 </div>
-<img src="${img[0]}" alt="${ru_name}, ${en_name}" class="single-product-img"></img>`;
+<div class="single-product__imgs-wrapper" id="single-product__imgs-wrapper"></div>`;
 
 const descriptionList = document.getElementById("description__list");
+const singleImgsWrapper = document.getElementById("single-product__imgs-wrapper");
 document.addEventListener("DOMContentLoaded", function () {
     descriptions.map(d => {
         descriptionList.innerHTML += `<p>${d}</p>`
+    });
+    img.map(i => {
+        singleImgsWrapper.innerHTML += `<img src="${i}" alt="${ru_name}, ${en_name}" class="single-product-img"></img>`
     })
 });
