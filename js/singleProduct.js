@@ -1,6 +1,7 @@
 const productID = Number(window.location.hash.split("#").join(''));
 const singleProductContainer = document.getElementById("single-product__container");
-const { id, ru_name, en_name, img, price, descriptions, made_in } = data[productID - 1];
+const { id, ru_name, en_name, img, descriptions, made_in } = data[productID - 1];
+const scaleImgWrapper = document.getElementById("scale-img-wrapper");
 
 singleProductContainer.innerHTML = `
 <div class="single-product__description">
@@ -24,6 +25,16 @@ document.addEventListener("DOMContentLoaded", function () {
         descriptionList.innerHTML += `<p>${d}</p>`
     });
     img.map(i => {
-        singleImgsWrapper.innerHTML += `<img src="${i}" alt="${ru_name}, ${en_name}" class="single-product-img"></img>`
+        singleImgsWrapper.innerHTML += `<img src="${i}" alt="${ru_name}, ${en_name}" class="single-product-img" onclick="showImage({src:'${i}', alt: '${ru_name}, ${en_name}'})"></img>`
     })
 });
+
+function showImage(obj) {
+    scaleImgWrapper.style.display = "flex";
+    scaleImgWrapper.innerHTML = `<img src=${obj.src} alt=${obj.alt}>`;
+    scaleImgWrapper.innerHTML += `<button type="button" class="close-imgs-wrapper" onclick="closeImage()">close</button>`
+}
+
+function closeImage(){
+    scaleImgWrapper.style.display = "none";
+}
