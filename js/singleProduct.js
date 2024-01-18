@@ -8,7 +8,7 @@ singleProductContainer.innerHTML = `
     <div class="description__list" id="description__list">
         <h4>Описание:</h4>
     </div>
-    <p class="product-price"><strong>Цена:</strong> <span>$${price}</span></p>
+    <p class="product-price"><strong>Цена:</strong> <span>договорная</span></p>
     <p class="made-in"><strong>Made in:</strong> <span>${made_in}</span></p>
     <div class="location">
         <p><strong>Локации: </strong> <span>Андижан</span>, <span>Ташкент</span></p>
