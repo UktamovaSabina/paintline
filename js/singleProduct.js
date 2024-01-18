@@ -35,6 +35,11 @@ function showImage(obj) {
     scaleImgWrapper.innerHTML += `<button type="button" class="close-imgs-wrapper" onclick="closeImage()">close</button>`
 }
 
-function closeImage(){
+function closeImage() {
     scaleImgWrapper.style.display = "none";
 }
+document.addEventListener("keypress", (e) => {
+    if (e.code === 'Enter' || e.code === 'Space') {
+        scaleImgWrapper.style.display = "none";
+    }
+})
