@@ -13,6 +13,6 @@ data.map(d => {
                 <p>${shortenProductDescription(null, 100, descriptions[0])}</p>
             </div>
         </div>
-        <a href="./description.html#${id}" class="product-button">see more</a>
+        <a href="./description.html#${id}" class="product-button">подробнее…</a>
     </a>
 </li>`});
