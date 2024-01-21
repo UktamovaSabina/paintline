@@ -122,6 +122,39 @@
             max-width: 550px;
             width: 100%;
             object-fit: contain;
+            margin: 0px 10px;
+        }
+
+        span {
+            cursor: pointer;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: crimson;
+            color: aliceblue;
+            border: 2px solid aliceblue;
+            border-radius: 10px;
+
+            &:hover {
+                opacity: 90%;
+            }
+
+            &:active {
+                opacity: 50%;
+            }
+        }
+
+        @media screen and (max-width: 750px) {
+            .prev-btn {
+                position: absolute;
+                bottom: 15%;
+                left: 20px;
+            }
+
+            .next-btn {
+                position: absolute;
+                bottom: 15%;
+                right: 20px;
+            }
         }
 
         .close-imgs-wrapper {
