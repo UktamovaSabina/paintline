@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const burgerIcon = document.getElementById('burger-icon');
     const navbarList = document.getElementById('navbar-list');
     const mediaQuery = window.matchMedia('(max-width: 700px)');
+    const telegramQrBtn = document.getElementById("telegram-qr-btn");
+    const telegramQrBtnWrapper = document.getElementById("telegram-qr-btn__wrapper");
+    const closeTelegramQrCode = document.getElementById("close-telegram-qr-code");
 
     burgerIcon.addEventListener('click', function () {
         navbarList.style.display = 'flex'
@@ -20,4 +23,14 @@ document.addEventListener("DOMContentLoaded", function () {
             navbarList.style.display = 'none'
         }
     })
+
+    // show telegram qr code
+    telegramQrBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        telegramQrBtnWrapper.style.display = 'flex';
+    })
+
+    closeTelegramQrCode.onclick = () => {
+        telegramQrBtnWrapper.style.display = 'none';
+    }
 });
