@@ -182,8 +182,8 @@ const data = [
     },
     {
         id: 13,
-        ru_name: "стекломат 600грамм 1м2",
-        en_name: "",
+        ru_name: "Стекломат 600грамм 1м2",
+        en_name: "Steklomat",
         img: [
             "images/products/steklomat1.jpg",
             "images/products/steklomat2.jpg"
